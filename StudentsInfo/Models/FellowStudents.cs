@@ -7,15 +7,26 @@ namespace StudentsInfo.Models
 {
     public class FellowStudents
     {
+        private string v;
+
         public string Name { get; set; }
         public string HairColor { get; set; }
-        public string Height { get; set; }
+        public int HeightFeet { get; set; }
+        public int HeightInches { get; set; }
 
-        public FellowStudents(string name, string haircolor, string height)
+       
+
+        public FellowStudents( string name, string haircolor, int heightFeet, int heightInches)
         {
             Name = name;
             HairColor = haircolor;
-            Height = height;
+            HeightFeet = heightFeet;
+            HeightInches = heightInches;
+        }
+
+        public FellowStudents(string v)
+        {
+            this.v = v;
         }
     }
 }
