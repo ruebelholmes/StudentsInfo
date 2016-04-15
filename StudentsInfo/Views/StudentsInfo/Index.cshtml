@@ -1,0 +1,13 @@
+﻿@model System.Collections.Generic.List<StudentsInfo.Models.FellowStudents>
+
+@{
+    ViewBag.Title = "title";
+    
+}
+
+<h2>Students Info</h2>
+
+@foreach (var c in Model)
+{
+    <li>@c.Name, Hair Color: c.HairColor, Height: c.HeightFeet 'c.HeightInches"</li>
+}
